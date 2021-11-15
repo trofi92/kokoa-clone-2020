@@ -25,3 +25,18 @@
 .status-bar__column .fa-battery-full {
   margin: 0px 5px;
 }
+
+#time {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#day {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#date {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.5);
+}
