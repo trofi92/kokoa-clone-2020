@@ -3,11 +3,12 @@
   <head>
     <link rel="stylesheet" href="css/styles.css" />
     <script src="time.js"></script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chats - Kokoa Clone</title>
+    <title>Chat w/ SY - Kokoa Clone</title>
   </head>
-  <body>
+  <body id="chat-screen">
     <div class="status-bar">
       <div class="status-bar__column">
         <span>No service</span>
@@ -16,79 +17,36 @@
       <div class="status-bar__column">
         <span id="time"
           ><script>
-            getCurrentTimeDate()
+            getCurrentTimeDate();
           </script></span
         >
-        <!-- <p id="day">SUN</p> -->
-        <!-- <p id="date">9 May 2021</p> -->
       </div>
+
+      <!-- <p id="date">9 May 2021</p> -->
+      <!-- <p id="day">SUN</p> -->
       <div class="status-bar__column">
         <span
           >110%
           <i class="fas fa-battery-full fa-lg"></i>
-          <i class="fas fa-bolt"></i
-        ></span>
+          <i class="fas fa-bolt"></i>
+        </span>
       </div>
     </div>
 
-    <header class="screen-header">
-      <h1 class="screen-header__title">Chats</h1>
-      <div class="screen-header__icons">
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="more.html"> <i class="fas fa-angle-left fa-3x"></i></a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">세영</h1>
+      </div>
+      <div class="alt-header__column">
         <span><i class="fas fa-search fa-lg"></i></span>
-        <span><i class="far fa-comment-dots fa-lg"></i></span>
-        <span><i class="fas fa-music fa-lg"></i></span>
-        <span><i class="fas fa-cog fa-lg"></i></span>
+        <span><i class="fas fa-bars fa-lg"></i></span>
       </div>
     </header>
 
-    <main class="main-screen">
-      <div class="user-component">
-        <div class="user-component__column">
-          <img
-            src="https://avatars.githubusercontent.com/u/84131398?v=4"
-            class="user-component__avatar user-component__avatar"
-          />
-          <div class="user-component__text">
-            <h4 class="user-component__title">SeYoung</h4>
-            <h6 class="user-component__subtitle">
-              Please check my Kokoa Account Info
-            </h6>
-          </div>
-        </div>
-
-        <div class="user-component__column">
-          <span class="user-component__time">21:22</span>
-          <div class="badge">1</div>
-        </div>
-      </div>
-    </main>
-
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__btn">
-          <a class="nav__link" href="friends.html">
-            <i class="far fa-user fa-2x"></i>
-          </a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="chats.html">
-            <span class="nav__notification badge">1</span>
-            <i class="fa-solid fa-comment fa-2x"></i>
-          </a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="find.html">
-            <i class="fas fa-search fa-2x"></i>
-          </a>
-        </li>
-        <li class="nav__btn">
-          <div class="nav__div"></div>
-          <a class="nav__link" href="more.html">
-            <i class="fas fa-ellipsis-h fa-2x"></i>
-          </a>
-        </li>
-      </ul>
-    </nav>
+    <!-- 하단 네비게이션 바 -->
 
     <script
       src="https://kit.fontawesome.com/ce4ad490c3.js"
