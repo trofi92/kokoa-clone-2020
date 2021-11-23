@@ -55,3 +55,28 @@
   display: block;
   margin-bottom: 10px;
 }
+
+@keyframes imgAppear {
+  0% {
+    opacity: 0.3;
+    transform: translateY(90deg);
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: rotateY(180deg);
+  }
+  75% {
+    opacity: 0.7;
+    transform: rotateY(270deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateY(360deg);
+  }
+}
+
+.user-component__column img:hover {
+  will-change: transform;
+  animation: imgAppear 1s ease-in-out forwards;
+}
